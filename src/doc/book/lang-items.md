@@ -19,6 +19,8 @@ sugar for dynamic allocations via `malloc` and `free`:
 #![feature(lang_items, box_syntax, start, libc)]
 #![no_std]
 
+# #![feature(panic_unwind)]
+# extern crate unwind;
 extern crate libc;
 
 extern {
